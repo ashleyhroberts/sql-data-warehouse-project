@@ -13,6 +13,10 @@ This project demonstrates a comprehensive data warehousing and analytics solutio
 ### Objective
 Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decisiong making.
 
+## Data Architecture
+
+![Data Architecture](docs/data_architecture-ar.png)
+
 ### Specifications
 - **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
 - **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
