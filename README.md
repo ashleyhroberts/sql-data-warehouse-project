@@ -1,6 +1,8 @@
 Welcome to my **Data Warehouse and Analytics Project** repository.
 This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights.  It's a portfolio project that highlights industry best practices in data engineering and analytics.
 
+**Why this project matters:** It reflects how analytics teams turn raw operational data into a trusted, business-ready data model that supports reliable reporting and informed decision-making.
+
 ---
 
 ## Project Overview
@@ -17,7 +19,7 @@ This project involves:
 ### Building the Data Warehouse (Data Engineering)
 
 ### Objective
-Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decisiong making.
+Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision making across the business.
 
 ### Specifications
 - **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
@@ -31,8 +33,8 @@ The data architecture for this project follows the Medallion Architecture Bronze
 
 ![Data Architecture](docs/data_architecture-ar.png)
 
-1. **Bronze Layer**: This layer stores raw data as-is from the source systems. Data is ingested from CSV files into SQL Server Database.
-2. **Silver Layer**: This layer inclues data cleansing, standardization, and normalization processes to prepare data for analysis.
+1. **Bronze Layer**: This layer stores raw data as-is from the source systems. Data is ingested from CSV files into SQL Server.
+2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
 3. **Gold Layer**: This layer houses business-ready data modeled into a star schema required for reporting and analytics.
 ---
 
@@ -50,18 +52,19 @@ These insights empower stakeholders with key business metrics, enabling strategi
 - **Exploratory Analytics**: Queried the products, sales, and customer tables, created in the Gold layer of the Data Warehouse, to explore the Dimensions, Dates and Measures in the dataset. 
 - **Magnitude Analysis**: Aggregated measures and grouped them by dimensions or categories. Calculated total customers by country and gender, products and average costs by category, total revenue by category and customer, and quantity by country.
 - **Ranking Analysis**: Ranked items (e.g., products, customers) based on performance and other metrics to identify high and low performers. Identified the best-selling category in each country by quantity and revenue.
-- **Change over Time Analysis**: Performed time-series analysis to track trends in growth, and changes in key metrics over time.
-- **Cumulative Analysis**: Calcuated running totals and moving averages for key metrics to track cumulative performance over time.
+- **Change over Time Analysis**: Performed time-series analysis to track trends in growth and changes in key metrics over time.
+- **Cumulative Analysis**: Calculated running totals and moving averages for key metrics to track cumulative performance over time.
 - **Performance Analysis**: Analyzed the yearly performance of products by comparing their sales to both the average sales performance of the product, and the previous year's sales. 
-- **Part-to-Whole Analysis**: Calculated how much eah product contributed to total sales. 
+- **Part-to-Whole Analysis**: Calculated how much each product contributed to total sales. 
 
 ### SQL Functions and Clauses Used:
 
-| `LEFT JOIN` | `UNION ALL` | `CASE WHEN` | `MIN()` | `MAX()` |
-| `DATEDIFF()` | `COUNT()` | `DISTINCT` | `SUM()` | `AVG()` |
+| `LEFT JOIN` | `UNION ALL` | `CASE WHEN` | `MIN()` | `MAX()` | `CTE's` | `Subqueries` |
+| `DATEDIFF()` | `COUNT()` | `DISTINCT` | `SUM()` | `AVG()` 
 | `GROUP BY` | `ORDER BY` | `LAG() OVER()` | `AVG() OVER()` | `SUM() OVER()` | `RANK() OVER()` |
 
-After doing the analysis, **I created 2 reports as Views summarizing the results** of the above.  These can be used to see consolidated results or to generate further insights.
+
+After doing the analysis, **I created two reports implemented as SQL views that summarize the results** of the above.  These can be used to see consolidated results or to generate further insights.
 
 ---
 
