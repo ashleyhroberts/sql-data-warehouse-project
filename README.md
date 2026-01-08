@@ -38,7 +38,7 @@ The data architecture for this project follows the Medallion Architecture Bronze
 3. **Gold Layer**: This layer houses business-ready data modeled into a star schema required for reporting and analytics.
 ---
 
-## BI: Analytics & Reporting (Data Analytics)
+## 📊 BI: Analytics & Reporting (Data Analytics)
 
 ### Objective
 Develop SQL-based analytics to deliver detailed insights into:
