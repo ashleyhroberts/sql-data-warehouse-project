@@ -59,7 +59,7 @@ These insights empower stakeholders with key business metrics, enabling strategi
 
 | `LEFT JOIN` | `UNION ALL` | `CASE WHEN` | `MIN()` | `MAX()` |
 | `DATEDIFF()` | `COUNT()` | `DISTINCT` | `SUM()` | `AVG()` |
-| `GROUP BY` | `ORDER BY` | `LAG() OVER()` | `AVG() OVER()` | `SUM() OVER()` |
+| `GROUP BY` | `ORDER BY` | `LAG() OVER()` | `AVG() OVER()` | `SUM() OVER()` | `RANK() OVER()` |
 
 After doing the analysis, **I created 2 reports as Views summarizing the results** of the above.  These can be used to see consolidated results or to generate further insights.
 
