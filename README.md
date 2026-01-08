@@ -29,7 +29,7 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 ### Data Architecture
 The data architecture for this project follows the Medallion Architecture Bronze, Silver, and Gold layers.
 
-![Data Architecture](docs/data warehouse/data_architecture.png)
+![Data Architecture](docs/data_architecture-ar.png)
 
 1. **Bronze Layer**: This layer stores raw data as-is from the source systems. Data is ingested from CSV files into SQL Server Database.
 2. **Silver Layer**: This layer inclues data cleansing, standardization, and normalization processes to prepare data for analysis.
