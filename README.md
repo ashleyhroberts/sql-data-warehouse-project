@@ -72,6 +72,8 @@ After doing the analysis, **I created two reports implemented as SQL views that 
 ### Connect with me
 Hi there! I’m **Ashley Roberts**. I created this project to advance my SQL skills through an end-to-end workflow — from building a data warehouse to writing advanced SQL queries that surface actionable analytical insights and support data-driven decision-making.
 
+I’m particularly interested in roles where I can focus on business intelligence, data modeling, analytics, and data visualization that help teams make better decisions.
+
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/ashleymhroberts/)
 - 🌐 [Portfolio](https://ashleyroberts.carrd.co/)
