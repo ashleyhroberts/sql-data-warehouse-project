@@ -91,18 +91,22 @@ GROUP BY MONTH(order_date)
 ORDER BY month 
 
 -- What is the best-selling category in each country by quantity and by revenue?
-SELECT
-	country,
-	category,
-	SUM(sales_amount) AS revenue,
-	SUM(quantity) AS units_sold
-FROM gold.fact_sales s
-LEFT JOIN gold.dim_customers c
-	ON s.customer_key = c.customer_key
-LEFT JOIN gold.dim_products p
-	ON s.product_key = s.product_key
-WHERE category IS NOT NULL
-GROUP BY country, category
-ORDER BY country, revenue DESC, units_sold DESC
+SELECT * 
+FROM (
+	SELECT
+		country,
+		category,
+		SUM(sales_amount) AS revenue,
+		SUM(quantity) AS units_sold,
+		RANK() OVER (PARTITION BY country ORDER BY SUM(quantity) DESC) AS units_sold_rank
+	FROM gold.fact_sales s
+	LEFT JOIN gold.dim_customers c
+		ON s.customer_key = c.customer_key
+	LEFT JOIN gold.dim_products p
+		ON s.product_key = s.product_key
+	WHERE category IS NOT NULL
+	GROUP BY country, category
+	)t
+WHERE units_sold_rank = 1
 
 
