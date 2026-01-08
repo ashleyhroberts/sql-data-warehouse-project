@@ -98,7 +98,8 @@ FROM (
 		category,
 		SUM(sales_amount) AS revenue,
 		SUM(quantity) AS units_sold,
-		RANK() OVER (PARTITION BY country ORDER BY SUM(quantity) DESC) AS units_sold_rank
+		RANK() OVER (PARTITION BY country ORDER BY SUM(quantity) DESC) AS units_sold_rank,
+		RANK() OVER (PARTITION BY country ORDER BY SUM(sales_amount) DESC) AS revenue_rank
 	FROM gold.fact_sales s
 	LEFT JOIN gold.dim_customers c
 		ON s.customer_key = c.customer_key
@@ -107,6 +108,6 @@ FROM (
 	WHERE category IS NOT NULL
 	GROUP BY country, category
 	)t
-WHERE units_sold_rank = 1
+WHERE units_sold_rank = 1 AND revenue_rank = 1
 
 
