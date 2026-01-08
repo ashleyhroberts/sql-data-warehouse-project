@@ -48,8 +48,8 @@ These insights empower stakeholders with key business metrics, enabling strategi
 
 ### Approach
 - **Exploratory Analytics**: Queried the products, sales, and customer tables, created in the Gold layer of the Data Warehouse, to explore the Dimensions, Dates and Measures in the dataset. 
-- **Magnitude Analysis**: Aggregated measures and grouped them by dimensions or categories. This helps to understand data distribution across categories. Total customers by country and gender, products and average costs by category, total revenue by category and customer, quantity by country,
-- **Ranking Analysis**: Ranked items (e.g., products, customers) based on performance and other metrics to identify high and low performers.
+- **Magnitude Analysis**: Aggregated measures and grouped them by dimensions or categories. Calculated total customers by country and gender, products and average costs by category, total revenue by category and customer, and quantity by country.
+- **Ranking Analysis**: Ranked items (e.g., products, customers) based on performance and other metrics to identify high and low performers. Identified the best-selling category in each country by quantity and revenue.
 - **Change over Time Analysis**: Performed time-series analysis to track trends in growth, and changes in key metrics over time.
 - **Cumulative Analysis**: Calcuated running totals and moving averages for key metrics to track cumulative performance over time.
 - **Performance Analysis**: Analyzed the yearly performance of products by comparing their sales to both the average sales performance of the product, and the previous year's sales. 
