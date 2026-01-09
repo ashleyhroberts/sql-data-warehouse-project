@@ -59,7 +59,7 @@ These insights empower stakeholders with key business metrics, enabling strategi
 
 ### SQL Functions and Clauses Used:
 
-| `LEFT JOIN` | `UNION ALL` | `CASE WHEN` | `MIN()` | `MAX()` | `CTE's` | `Subqueries` |
+| `LEFT JOIN` | `UNION ALL` | `CASE WHEN` | `MIN()` | `MAX()` | `CTE's` | `Subqueries` 
 | `DATEDIFF()` | `COUNT()` | `DISTINCT` | `SUM()` | `AVG()` 
 | `GROUP BY` | `ORDER BY` | `LAG() OVER()` | `AVG() OVER()` | `SUM() OVER()` | `RANK() OVER()` |
 
